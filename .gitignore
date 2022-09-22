@@ -1,0 +1,4 @@
+build/
+partition_comparison.egg-info/
+dist/
+partition_comparison.cpython-38-x86_64-linux-gnu.so

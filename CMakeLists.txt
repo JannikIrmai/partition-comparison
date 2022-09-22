@@ -37,3 +37,9 @@ if(MATLAB_FOUND)
    target_link_libraries(andres_variation_of_information ${MATLAB_LIBRARIES})
 endif()
 
+# python interface
+find_package(pybind11)
+if(pybind11_FOUND)
+    pybind11_add_module(partition_comparison src/python-interface/partition-comparison.cxx)
+endif()
+
