@@ -64,8 +64,6 @@ public:
 
         for (auto const& it : n)
         {
-            const size_t i = it.first.first;
-            const size_t j = it.first.second;
             const size_t n_ij = it.second;
 
             trueJoins_ += n_ij * (n_ij - 1) / 2;
